@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather map</title>
+  <link rel="stylesheet" href="css/my.css" />
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/leaflet.draw.css" />
+
+  <link rel="stylesheet" href="css/skeleton/base.css" />
+  <link rel="stylesheet" href="css/skeleton/layout.css" />
+  <link rel="stylesheet" href="css/skeleton/skeleton.css" />
+
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/leaflet.ie.css" />
+  <![endif]-->
+    <script src="js/leaflet.js"></script>
+
+    <script src="js/Control.Draw.js"></script>
+    <script src="js/Handler.Draw.js"></script>
+    <script src="js/Marker.Draw.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+
+</head>
+<body>
+    <div class="sixteen columns" id="map"></div>
+</body>
+<script src="js/my.js"></script>
+<script>
+  if(<%= auth %>){
+    var FacebookP= L.Control.extend({
+        options: {
+            position: 'topright'
+        },
+
+        onAdd: function (map) {
+            // create the control container with a particular class name
+            var container = L.DomUtil.create('div', 'facebook');
+
+            container.innerHTML = "<a class='facebook-picture' href='http://www.facebook.com/<%= name %>'></a><a class='facebook-logout' href='/logout'></a>"
+            return container;
+        }
+        });
+    map.addControl(new FacebookP());
+  }else{
+    fc();
+  }
+</script>
+<style>
+.facebook-picture {
+    width: 56px;
+    height: 56px;
+    background-image: url(<%= ava %>);
+    margin-top: 5px;
+}
+
+</style>
+</html>

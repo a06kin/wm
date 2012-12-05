@@ -1,0 +1,43 @@
+{
+  "name": "OpenShift-Sample-App",
+  "version": "1.0.0",
+  "description": "OpenShift Sample Application",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "OpenShift",
+    "email": "ramr@example.org",
+    "url":  "http://openshift.redhat.com/"
+  },
+  "homepage": "http://openshift.redhat.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/openshift/crankcase"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0" 
+  },
+
+  "dependencies": {
+    "ejs": ">= 0.8.2",
+    "mongoose": ">=3.0.2",
+    "cron": ">=1.0.0",
+    "passport": ">= 0.1.12",
+    "passport-facebook": ">= 0.1.4",
+    "passport-photo": ">=0.0.1-beta1",
+    "passport-photo-facebook": ">=0.0.1-beta2",
+    "q": ">=0.8.8",
+    "request": ">=2.10.0"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
+}

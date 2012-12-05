@@ -1,0 +1,75 @@
+.facebook {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.facebook a {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.75);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block; 
+    margin-top: 5px;
+}
+
+.facebook a:hover {
+    background-color: #fff;
+}
+
+.facebook a:first-child{
+  margin-top: 0;
+}
+
+.facebook-login {
+    width: 160px;
+    height: 28px;
+    background-image: url(../../img/login-with-facebook-button.png);
+    margin-top: 5px;
+}
+
+.facebook-logout {
+    width: 81px;
+    height: 28px;
+    background-image: url(../../img/facebook-logout-button.png);
+    margin-top: 5px;
+}
+
+.cloudy{
+    background-image: url(images/weather/cloudy.png);
+}
+.cloudysunny{
+    background-image: url(images/weather/cloudysunny.png);
+}
+.rainy{
+    background-image: url(images/weather/rainy.png);
+}
+.snowy{
+    background-image: url(images/weather/snowy.png);
+}
+.sunny{
+    background-image: url(images/weather/sunny.png);
+}
+.thunderstorm{
+    background-image: url(images/weather/thunderstorm.png);
+}
+.tornado{
+    background-image: url(images/weather/tornado.png);
+}
+.umbrella{
+    background-image: url(images/weather/umbrella.png);
+}
+.wind{
+    background-image: url(images/weather/wind.png);
+}
+
+.my{
+    border: 1px solid red;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
